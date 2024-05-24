@@ -2,11 +2,11 @@
 pragma solidity >=0.7.5;
 pragma abicoder v2;
 
-import '@uniswap/v3-core/contracts/interfaces/callback/IUniswapV3SwapCallback.sol';
+import 'swifydex-v3-core/contracts/interfaces/callback/ISwifyDexSwapCallback.sol';
 
 /// @title Router token swapping functionality
-/// @notice Functions for swapping tokens via Uniswap V3
-interface ISwapRouter is IUniswapV3SwapCallback {
+/// @notice Functions for swapping tokens via SwifyDex
+interface ISwapRouter is ISwifyDexSwapCallback {
     struct ExactInputSingleParams {
         address tokenIn;
         address tokenOut;
